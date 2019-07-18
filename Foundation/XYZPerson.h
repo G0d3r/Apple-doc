@@ -12,15 +12,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface XYZPerson : NSObject
 
-+ (instancetype) person;
-
 @property NSString *firstName;
 @property NSString *secondName;
 @property NSDate *dateOfBirth;
 
 - (void)coffee;
-
 - (void)saySomething:(NSString *)say;
++ (instancetype) person;
 
 @end
 

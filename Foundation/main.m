@@ -17,6 +17,10 @@ int main(int argc, const char * argv[]) {
         XYZShoutingPerson *coffeeForMe = [XYZShoutingPerson person];
         [coffeeForMe coffee];
         
+        XYZPerson* somePerson;
+        if (somePerson == nil) {
+            NSLog(@"'somePerson' is equal to nil");
+        }
     }
 
     
