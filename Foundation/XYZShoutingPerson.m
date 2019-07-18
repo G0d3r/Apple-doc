@@ -8,8 +8,16 @@
 
 #import "XYZShoutingPerson.h"
 
-@implementation XYZShoutingPerson
+@implementation XYZShoutingPerson {
+    BOOL newVar;
+}
 
-- (void)saySomething:(NSString *)say
+- (void)saySomething:(NSString* )say
+{
+    NSString *uppercaseGreeting = [say uppercaseString];
+    [super saySomething:uppercaseGreeting];
+}
 
 @end
+
+

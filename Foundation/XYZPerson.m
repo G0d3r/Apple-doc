@@ -9,14 +9,25 @@
 #import "XYZPerson.h"
 
 @implementation XYZPerson
-    
-- (void)needACoffee {
-    [self saySomething:@"Give me a coffee!"];
+
++ (instancetype) person
+{
+    XYZPerson* person = [[self alloc] init];
+    return person;
 }
 
-- (void)saySomething:(NSString *)say {
+- (void)coffee
+{
+    [self saySomething:@"Give ma a coffee"];
+}
+
+- (void)saySomething:(NSString*)say
+{
     NSLog(@"%@",say);
 }
+
+
+
 
 
 

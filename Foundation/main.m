@@ -8,14 +8,17 @@
 
 #import <Foundation/Foundation.h>
 #import "XYZPerson.h"
+#import "XYZShoutingPerson.h"
+
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-
-        XYZPerson *coffeeForMe = [[XYZPerson alloc] init];
-        [coffeeForMe needACoffee];
+     
+        //TheClass *newObject = [[TheClass alloc] init];
+        XYZShoutingPerson *coffeeForMe = [XYZShoutingPerson person];
+        [coffeeForMe coffee];
         
     }
-    
+
     
     return 0;
 }
