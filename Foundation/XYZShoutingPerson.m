@@ -10,6 +10,7 @@
 
 @implementation XYZShoutingPerson {
     BOOL newVar;
+    
 }
 
 - (void)saySomething:(NSString* )say

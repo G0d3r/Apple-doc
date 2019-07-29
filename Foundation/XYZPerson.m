@@ -13,18 +13,20 @@
 + (instancetype) person
 {
     XYZPerson* person = [[self alloc] init];
+    [person setFirstName:@"Jonny"];
+    [person setSecondName:@"Szurgot"];
     return person;
 }
 
-- (void)coffee
+- (void)sayHello
 {
-    [self saySomething:@"Give ma a coffee"];
+    NSString* fullName = [NSString stringWithFormat:@"My name is: %@ %@", self.firstName, self.secondName];
+    [self saySomething:fullName];
 }
 
 - (void)saySomething:(NSString*)say
 {
     NSLog(@"%@",say);
 }
-
 
 @end

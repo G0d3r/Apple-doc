@@ -15,9 +15,10 @@ int main(int argc, const char * argv[]) {
      
         //TheClass *newObject = [[TheClass alloc] init];
         XYZShoutingPerson *coffeeForMe = [XYZShoutingPerson person];
-        [coffeeForMe coffee];
+        [coffeeForMe sayHello];
         
         XYZPerson* somePerson;
+        NSString* firstName = [somePerson firstName];
         if (somePerson == nil) {
             NSLog(@"'somePerson' is equal to nil");
         }
