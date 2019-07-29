@@ -18,6 +18,18 @@
     return person;
 }
 
+- (id)initWithNameAndDoB:(NSString *)fName last:(NSString *)lName birth:(NSDate *)dob
+{
+    self = [super init];
+    if (self)
+    {
+        _firstName = fName;
+        _secondName = lName;
+        _dateOfBirth = dob;
+    }
+    return self;
+}
+
 - (void)sayHello
 {
     NSString* fullName = [NSString stringWithFormat:@"My name is: %@ %@", self.firstName, self.secondName];

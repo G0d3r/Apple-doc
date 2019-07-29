@@ -18,7 +18,6 @@ int main(int argc, const char * argv[]) {
         [coffeeForMe sayHello];
         
         XYZPerson* somePerson;
-        NSString* firstName = [somePerson firstName];
         if (somePerson == nil) {
             NSLog(@"'somePerson' is equal to nil");
         }
