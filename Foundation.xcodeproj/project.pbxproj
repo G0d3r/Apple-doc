@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		86D71A0022F1CC56000856C5 /* BaseClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 86D719FF22F1CC56000856C5 /* BaseClass.m */; };
+		86D71A0322F1CC6E000856C5 /* SubClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 86D71A0222F1CC6E000856C5 /* SubClass.m */; };
 		86F1FF1A22DF4D32003B730E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 86F1FF1922DF4D32003B730E /* main.m */; };
 		86F1FF2222DF4E44003B730E /* XYZPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 86F1FF2122DF4E44003B730E /* XYZPerson.m */; };
 		86F1FF2522DF5FAB003B730E /* XYZShoutingPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 86F1FF2422DF5FAB003B730E /* XYZShoutingPerson.m */; };
@@ -25,6 +27,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		86D719FE22F1CC56000856C5 /* BaseClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseClass.h; sourceTree = "<group>"; };
+		86D719FF22F1CC56000856C5 /* BaseClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseClass.m; sourceTree = "<group>"; };
+		86D71A0122F1CC6E000856C5 /* SubClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SubClass.h; sourceTree = "<group>"; };
+		86D71A0222F1CC6E000856C5 /* SubClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SubClass.m; sourceTree = "<group>"; };
 		86F1FF1622DF4D32003B730E /* Foundation */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Foundation; sourceTree = BUILT_PRODUCTS_DIR; };
 		86F1FF1922DF4D32003B730E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		86F1FF2022DF4E44003B730E /* XYZPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XYZPerson.h; sourceTree = "<group>"; };
@@ -66,8 +72,12 @@
 				86F1FF1922DF4D32003B730E /* main.m */,
 				86F1FF2022DF4E44003B730E /* XYZPerson.h */,
 				86F1FF2122DF4E44003B730E /* XYZPerson.m */,
+				86D719FE22F1CC56000856C5 /* BaseClass.h */,
+				86D719FF22F1CC56000856C5 /* BaseClass.m */,
 				86F1FF2322DF5FAB003B730E /* XYZShoutingPerson.h */,
 				86F1FF2422DF5FAB003B730E /* XYZShoutingPerson.m */,
+				86D71A0122F1CC6E000856C5 /* SubClass.h */,
+				86D71A0222F1CC6E000856C5 /* SubClass.m */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -129,8 +139,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				86F1FF2222DF4E44003B730E /* XYZPerson.m in Sources */,
+				86D71A0322F1CC6E000856C5 /* SubClass.m in Sources */,
 				86F1FF2522DF5FAB003B730E /* XYZShoutingPerson.m in Sources */,
 				86F1FF1A22DF4D32003B730E /* main.m in Sources */,
+				86D71A0022F1CC56000856C5 /* BaseClass.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

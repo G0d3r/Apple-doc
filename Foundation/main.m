@@ -9,18 +9,22 @@
 #import <Foundation/Foundation.h>
 #import "XYZPerson.h"
 #import "XYZShoutingPerson.h"
+#import "SubClass.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
      
-        //TheClass *newObject = [[TheClass alloc] init];
-        XYZShoutingPerson *coffeeForMe = [XYZShoutingPerson person];
-        [coffeeForMe sayHello];
+//        //TheClass *newObject = [[TheClass alloc] init];
+//        XYZShoutingPerson *coffeeForMe = [XYZShoutingPerson person];
+//        [coffeeForMe sayHello];
+//
+//        XYZPerson* somePerson;
+//        if (somePerson == nil) {
+//            NSLog(@"'somePerson' is equal to nil");
+//        }
         
-        XYZPerson* somePerson;
-        if (somePerson == nil) {
-            NSLog(@"'somePerson' is equal to nil");
-        }
+        SubClass* object = [[SubClass alloc] init];
+        
     }
 
     

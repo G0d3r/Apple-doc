@@ -19,8 +19,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)sayHello;
 - (void)saySomething:(NSString *)greeting;
 + (instancetype)person;
-- (id)initWithNameAndDoB:(NSString *)fName last:(NSString *)lName
-                                          birth:(NSDate *)dob;
+- (id)initWithNameAndDoB:(NSString *)fName last:(NSString *)lName birth:(NSDate *)dob;
++ (instancetype)personWithNameAndDob:(NSString *)fName last:(NSString *)lName birth:(NSDate *)dob;
 
 //+ (id)firstName:(NSString *)firstName lastName:(NSString *) dob:(NSDate *)dateOfBirth;
 

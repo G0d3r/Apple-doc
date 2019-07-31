@@ -20,14 +20,21 @@
 
 - (id)initWithNameAndDoB:(NSString *)fName last:(NSString *)lName birth:(NSDate *)dob
 {
-    self = [super init];
-    if (self)
+    if (self = [super init])
     {
         _firstName = fName;
         _secondName = lName;
         _dateOfBirth = dob;
     }
     return self;
+}
+
++ (instancetype)personWithNameAndDob:(NSString *)fName last:(NSString *)lName birth:(NSDate *)dob {
+    return [[XYZPerson alloc] initWithNameAndDoB:fName last:lName birth:dob];
+}
+
+- (id)init {
+    return [self initWithNameAndDoB:@"Foo" last:@"Boo" birth:nil];
 }
 
 - (void)sayHello
