@@ -6,13 +6,13 @@
 //  Copyright © 2019 Ernest Godlewski. All rights reserved.
 //
 
-#import "BaseClass.h"
+#import "Person.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface SubClass : BaseClass
+@interface Marcin : Person
 
-
+@property BOOL czyMaSwinkiMorskie;
 
 @end
 

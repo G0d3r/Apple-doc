@@ -6,28 +6,28 @@
 //  Copyright © 2019 Ernest Godlewski. All rights reserved.
 //
 
-#import "BaseClass.h"
+#import "Person.h"
 
-@implementation BaseClass
+@implementation Person
 
 -(instancetype)initWithDefaultName
 {
     self = [super init];
-    NSLog(@"BaseClass is completly initialized");
+    _name = @"Default Name";
     return self;
 }
 
 -(instancetype)initWithCustomName
 {
     self = [self init];
-    NSLog(@"BaseClass CustomName has been set");
+    _name = @"Custom Name";
     return self;
 }
 
 -(instancetype)init
 {
     self = [self initWithDefaultName];
-    NSLog(@"BaseClass convenience init called");
+//    NSLog(@"BaseClass convenience init called");
     return self;
 }
 

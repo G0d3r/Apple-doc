@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface XYZPerson : NSObject
 
-@property NSString* firstName;
+@property NSMutableString* firstName;
 @property NSString* secondName;
 @property NSDate* dateOfBirth;
 

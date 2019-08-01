@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "XYZPerson.h"
 #import "XYZShoutingPerson.h"
-#import "SubClass.h"
+#import "Marcin.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -23,7 +23,8 @@ int main(int argc, const char * argv[]) {
 //            NSLog(@"'somePerson' is equal to nil");
 //        }
         
-        SubClass* object = [[SubClass alloc] init];
+        Marcin* object = [[Marcin alloc] init];
+        NSLog(object.description);
         
     }
 

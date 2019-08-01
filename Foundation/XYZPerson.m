@@ -13,8 +13,11 @@
 + (instancetype) person
 {
     XYZPerson* person = [[self alloc] init];
+    NSMutableString *nameString = [NSMutableString stringWithString:@"Johny"];
+    
     [person setFirstName:@"Jonny"];
     [person setSecondName:@"Szurgot"];
+    [person setFirstName:@"Marcin"];
     return person;
 }
 
@@ -39,6 +42,7 @@
 
 - (void)sayHello
 {
+    
     NSString* fullName = [NSString stringWithFormat:@"My name is: %@ %@", self.firstName, self.secondName];
     [self saySomething:fullName];
 }

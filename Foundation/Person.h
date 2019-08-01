@@ -10,7 +10,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface BaseClass : NSObject
+@interface Person : NSObject
+
+@property (nonatomic, copy) NSString* name;
 
 -(instancetype)initWithDefaultName NS_DESIGNATED_INITIALIZER;
 -(instancetype)initWithCustomName;
