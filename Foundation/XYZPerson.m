@@ -10,39 +10,34 @@
 
 @implementation XYZPerson
 
-+ (instancetype) person
+@synthesize firstName = _firstName;
+@synthesize secondName = _secondName;
+@synthesize dob = _dob;
+
++ (id)init
 {
-    XYZPerson* person = [[self alloc] init];
-    NSMutableString *nameString = [NSMutableString stringWithString:@"Johny"];
-    
-    [person setFirstName:@"Jonny"];
-    [person setSecondName:@"Szurgot"];
-    [person setFirstName:@"Marcin"];
+    return [self personWithFirstName:@"Jan" lastName:@"" dob:8/23/1990];
+}
+
++ (id)personWithFirstName:(NSString *)firstName lastName:(NSString *)lastName dob:(NSDate *)dateOfBirth
+{
+    XYZPerson *person = [[self alloc] init];
+    person.firstName = firstName;
+    person.secondName = secondName;
     return person;
 }
 
-- (id)initWithNameAndDoB:(NSString *)fName last:(NSString *)lName birth:(NSDate *)dob
++ (instancetype) person
 {
-    if (self = [super init])
-    {
-        _firstName = fName;
-        _secondName = lName;
-        _dateOfBirth = dob;
-    }
-    return self;
+    XYZPerson* person = [[self alloc] init];
+    return person;
 }
 
-+ (instancetype)personWithNameAndDob:(NSString *)fName last:(NSString *)lName birth:(NSDate *)dob {
-    return [[XYZPerson alloc] initWithNameAndDoB:fName last:lName birth:dob];
-}
+//- (id)initWithNameAndDoB:(NSString *)fName last:(NSString *)lName birth:(NSDate *)dob
 
-- (id)init {
-    return [self initWithNameAndDoB:@"Foo" last:@"Boo" birth:nil];
-}
 
 - (void)sayHello
 {
-    
     NSString* fullName = [NSString stringWithFormat:@"My name is: %@ %@", self.firstName, self.secondName];
     [self saySomething:fullName];
 }
@@ -51,5 +46,23 @@
 {
     NSLog(@"%@",say);
 }
+
+//{
+//    if (self = [super init])
+//    {
+//        _firstName = fName;
+//        _secondName = lName;
+//        _dateOfBirth = dob;
+//    }
+//    return self;
+//}
+//
+//+ (instancetype)personWithNameAndDob:(NSString *)fName last:(NSString *)lName birth:(NSDate *)dob {
+//    return [[XYZPerson alloc] initWithNameAndDoB:fName last:lName birth:dob];
+//}
+//
+//- (id)init {
+//    return [self initWithNameAndDoB:@"Foo" last:@"Boo" birth:nil];
+//}
 
 @end

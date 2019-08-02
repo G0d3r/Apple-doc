@@ -25,7 +25,7 @@ int main(int argc, const char * argv[]) {
         
         Marcin* object = [[Marcin alloc] init];
         NSLog(object.description);
-        
+
     }
 
     

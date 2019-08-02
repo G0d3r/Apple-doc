@@ -17,6 +17,7 @@
 //    return self;
 //}
 
+
 -(instancetype)initWithDefaultName
 {
     self = [super initWithDefaultName];
@@ -25,4 +26,5 @@
     _czyMaSwinkiMorskie = YES;
     return self;
 }
+
 @end
