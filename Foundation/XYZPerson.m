@@ -9,32 +9,34 @@
 #import "XYZPerson.h"
 
 @implementation XYZPerson
+//
+//@synthesize firstName = _firstName;
+//@synthesize secondName = _secondName;
+//@synthesize dob = _dob2;
 
-@synthesize firstName = _firstName;
-@synthesize secondName = _secondName;
-@synthesize dob = _dob;
-
-+ (id)init
+- (instancetype)initWithFirstName:(NSString *)firstName lastName:(NSString *)lastName dob:(NSDate *)dateOfBirth
 {
-    return [self personWithFirstName:@"Jan" lastName:@"" dob:8/23/1990];
+    self = [super init];
+    _firstName = [firstName mutableCopy];
+    _secondName = lastName;
+    self->_dob = dateOfBirth;
+    return self;
 }
 
-+ (id)personWithFirstName:(NSString *)firstName lastName:(NSString *)lastName dob:(NSDate *)dateOfBirth
+- (instancetype)init
 {
-    XYZPerson *person = [[self alloc] init];
-    person.firstName = firstName;
-    person.secondName = secondName;
-    return person;
+    return [self initWithFirstName:@"Artur" lastName:@"Boruc" dob:[NSDate date]];
+}
+
++ (instancetype)personWithFirstName:(NSString *)firstName lastName:(NSString *)lastName dob:(NSDate *)dateOfBirth
+{
+    return [[self alloc] initWithFirstName:firstName lastName:lastName dob:dateOfBirth];
 }
 
 + (instancetype) person
 {
-    XYZPerson* person = [[self alloc] init];
-    return person;
+    return [[self alloc] init];
 }
-
-//- (id)initWithNameAndDoB:(NSString *)fName last:(NSString *)lName birth:(NSDate *)dob
-
 
 - (void)sayHello
 {
@@ -47,22 +49,17 @@
     NSLog(@"%@",say);
 }
 
+//+ (id)init
 //{
-//    if (self = [super init])
-//    {
-//        _firstName = fName;
-//        _secondName = lName;
-//        _dateOfBirth = dob;
-//    }
-//    return self;
+//    return [self personWithFirstName:@"Jan" lastName:@"" dob:8/23/1990];
 //}
-//
-//+ (instancetype)personWithNameAndDob:(NSString *)fName last:(NSString *)lName birth:(NSDate *)dob {
-//    return [[XYZPerson alloc] initWithNameAndDoB:fName last:lName birth:dob];
-//}
-//
-//- (id)init {
-//    return [self initWithNameAndDoB:@"Foo" last:@"Boo" birth:nil];
+
+//+ (id)personWithFirstName:(NSString *)firstName lastName:(NSString *)lastName dob:(NSDate *)dateOfBirth
+//{
+//    XYZPerson *person = [[self alloc] init];
+//    person.firstName = firstName;
+//     person.secondName = secondName;
+//    return person;
 //}
 
 @end
