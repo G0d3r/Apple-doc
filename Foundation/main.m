@@ -14,15 +14,15 @@
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
      
-        //TheClass *newObject = [[TheClass alloc] init];
-        XYZPerson *coffeeForMe = [XYZPerson person];
-        [coffeeForMe sayHello];
-        
-        NSMutableString* somePerson;
-        [somePerson setString:@"Martin"];
-        if (somePerson == nil) {
-            NSLog(@"'somePerson' is equal to nil");
-        }
+//        //TheClass *newObject = [[TheClass alloc] init];
+//        XYZPerson *coffeeForMe = [XYZPerson person];
+//        [coffeeForMe sayHello];
+//        
+//        NSMutableString* somePerson;
+//        [somePerson setString:@"Martin"];
+//        if (somePerson == nil) {
+//            NSLog(@"'somePerson' is equal to nil");
+//        }
         
         Marcin* object = [[Marcin alloc] initWithDefaultName];
         NSLog(object.description);

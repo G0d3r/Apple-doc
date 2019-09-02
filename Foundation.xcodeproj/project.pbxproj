@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		868F6CF822F9778F0017647A /* Example.m in Sources */ = {isa = PBXBuildFile; fileRef = 868F6CF722F9778F0017647A /* Example.m */; };
 		86D71A0022F1CC56000856C5 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 86D719FF22F1CC56000856C5 /* Person.m */; };
 		86D71A0322F1CC6E000856C5 /* Marcin.m in Sources */ = {isa = PBXBuildFile; fileRef = 86D71A0222F1CC6E000856C5 /* Marcin.m */; };
 		86F1FF1A22DF4D32003B730E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 86F1FF1922DF4D32003B730E /* main.m */; };
@@ -27,6 +28,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		868F6CF622F9778F0017647A /* Example.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Example.h; sourceTree = "<group>"; };
+		868F6CF722F9778F0017647A /* Example.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Example.m; sourceTree = "<group>"; };
 		86D719FE22F1CC56000856C5 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		86D719FF22F1CC56000856C5 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		86D71A0122F1CC6E000856C5 /* Marcin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Marcin.h; sourceTree = "<group>"; };
@@ -78,6 +81,8 @@
 				86F1FF2422DF5FAB003B730E /* XYZShoutingPerson.m */,
 				86D71A0122F1CC6E000856C5 /* Marcin.h */,
 				86D71A0222F1CC6E000856C5 /* Marcin.m */,
+				868F6CF622F9778F0017647A /* Example.h */,
+				868F6CF722F9778F0017647A /* Example.m */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -108,7 +113,7 @@
 		86F1FF0E22DF4D32003B730E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1020;
+				LastUpgradeCheck = 1100;
 				ORGANIZATIONNAME = "Ernest Godlewski";
 				TargetAttributes = {
 					86F1FF1522DF4D32003B730E = {
@@ -122,6 +127,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 86F1FF0D22DF4D32003B730E;
 			productRefGroup = 86F1FF1722DF4D32003B730E /* Products */;
@@ -140,6 +146,7 @@
 			files = (
 				86F1FF2222DF4E44003B730E /* XYZPerson.m in Sources */,
 				86D71A0322F1CC6E000856C5 /* Marcin.m in Sources */,
+				868F6CF822F9778F0017647A /* Example.m in Sources */,
 				86F1FF2522DF5FAB003B730E /* XYZShoutingPerson.m in Sources */,
 				86F1FF1A22DF4D32003B730E /* main.m in Sources */,
 				86D71A0022F1CC56000856C5 /* Person.m in Sources */,
@@ -263,6 +270,7 @@
 		86F1FF1E22DF4D32003B730E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6AT9QLL83H;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -272,6 +280,7 @@
 		86F1FF1F22DF4D32003B730E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6AT9QLL83H;
 				PRODUCT_NAME = "$(TARGET_NAME)";
